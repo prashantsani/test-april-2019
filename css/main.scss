@@ -9,7 +9,7 @@
 	base level Height :
 	base level Width :
 
-	sass --watch main.scss:style.css main.scss:../helpers/dummy-data/love-monster-theme/assets/style.css --style compressed
+	sass --watch main.scss:style.css --style compressed
 
 */
 
@@ -30,27 +30,8 @@
 /* =============================================================================
 	 1. SCSS Variables
 ========================================================================== */
-	$u10: 0.624em;
-	$u10: 0.702rem;
-	$u12: 0.79rem;
-	$u14: 0.889rem;
-	$u16: 1rem;
-	$u18: 1.125rem;
-	$u20: 1.25rem;
-	$u22: 1.375rem;
-	$u24: 1.5rem;
-	$u28: 1.75rem;
-	$u32: 2rem;
-	$u36: 2.25rem;
-	$u40: 2.5rem;
-	$u45: 2.8125rem;
-	$u48: 3rem;
-	$u60: 3.75rem;
-	$u100: 6.25rem;
-	$u130: 8.125rem;
-	$u160: 10rem;
-
 	// Primary Colors
+	$blue : #00457c;
 
 	// Secondary Colors
 
@@ -126,7 +107,7 @@
 		Typography
 	------------ */
 	html{
-		// color: ;
+		color: white;
 		// font-family: ;
 		// background-color: ;
 		// @media screen and (min-width:1500px){
@@ -173,12 +154,9 @@
 
 	}
 	h6,.h6{
-		font-family: 'ralewaymedium';
-    font-size: $u14;
-    color: inherit;
+    
 	}
 	small{
-		font-size: $u12;
 		line-height: 1.8;
     letter-spacing: 0.169em;
 	}
@@ -243,7 +221,6 @@
 	.prev-next-wrap{
 		margin-left: auto;
 		margin-right: auto;
-		font-size: $u14;
 		margin-bottom: 1em;
 		width: 1500px;
     max-width: 80%;
