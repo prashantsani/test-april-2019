@@ -108,7 +108,7 @@
 	------------ */
 	html{
 		color: white;
-		// font-family: ;
+		font-family: Helvetica, Arial, sans-serif;
 		// background-color: ;
 		// @media screen and (min-width:1500px){
 		// 	font-size: 18px;
@@ -231,7 +231,8 @@
 		.wrap {
 			margin: 0 auto;
 			position: relative;
-			z-index: 1
+			z-index: 1;
+			width: 1335px;
 		}
 
 	/* ------------

@@ -2,4 +2,17 @@
   width: 100%;
   background: $blue;
   position: fixed;
+  z-index: 10;
+  height: 86px;
+  .wrap{
+    height: 100%;
+  }
+}
+#header-logo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 58px;
+  height: 58px;
+  margin: -29px 0 0 -29px;
 }
