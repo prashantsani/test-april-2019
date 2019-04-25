@@ -6,16 +6,81 @@
   height: 86px;
   .wrap{
     height: 100%;
+    width: 98%;
+    max-width: 1700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
   }
 }
+.hamburgar-wrap{
+  font-size: 16px;
+  order: 1;
+  .hamburgar{
+    margin-right: 15px;
+  }
+  .fa-bars{
+    font-size: 30px;
+  }
+  .home-link{
+    padding-bottom: 5px;
+    border-bottom: 5px solid #01a4ce;
+    vertical-align: middle;
+    position: relative;
+    top: -7px;
+    display: inline-block;
+  }
+}
+.logo{
+  order: 2
+}
+.search-login-btn-wrap{
+  order: 3;
+  a, button{
+    margin-left: 15px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  .fa-bars{
+    font-size: 30px;
+  }
+}
+.logo,
 #header-logo{
-  position: absolute;
-  left: 50%;
-  top: 50%;
   width: 58px;
-  height: 58px;
-  margin: -29px 0 0 -29px;
+  height: 58px;  
+}
+#header-logo{
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // margin: -29px 0 0 -29px;
   path{
     fill: white;
+  }
+}
+.btn-search{
+  .fa{
+    font-size: 20px;
+  }
+}
+
+.scroll-down{
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  bottom: 20px;
+  text-align: center;
+  margin-left: -50px;
+  .fas, span{
+    display: block;
+  }
+  .fas{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  span{
+    font-size: 13px;
   }
 }
