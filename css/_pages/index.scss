@@ -2,8 +2,15 @@
 .st1{fill:#00437A;}
 .st2{fill:#12A6D4;}
 
-.index{
-
+.js.index{
+  // Initialsing for animations
+  .page-header,
+  .hamburgar-wrap,
+  .search-login-btn-wrap,
+  .hero-text-image,
+  .scroll-down{
+    opacity: 0;
+  }
 }
 .hero-home{
   width: 100%;

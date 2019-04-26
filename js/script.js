@@ -92,8 +92,29 @@ j.scaleX=j.scaleY=j.scaleZ=1,za("transform,scale,scaleX,scaleY,scaleZ,x,y,z,rota
 
 	function initPageAnims(){
 		TweenMax.set('#header-logo', { transformOrigin: 'center'})
-		TweenMax.staggerFromTo('#header-logo path', 0.7 , {opacity:0, scale:0}, {opacity:1, scale:1, rotation: 0},0.05);
-		TweenMax.fromTo('#header-logo', 1 , {rotation: 400}, { rotation: 0});
+		TweenMax.to('.page-header',0.2,{
+			// I dont mind Callback hell! But,I can use promisses too :)
+			opacity:1, 
+			onComplete: function(){
+				TweenMax.staggerFromTo('#header-logo path', 0.7 , 
+						{	opacity:0, scale:0}, 
+						{	opacity:1, scale:1, rotation: 0,
+							onComplete: function(){
+									TweenMax.to('.hamburgar-wrap,.search-login-btn-wrap',0.5, 
+									{ opacity:1,
+										onComplete: function (){
+												TweenMax.to('.hero-text-image',0.3,{opacity:1})
+												setTimeout(function(){
+													TweenMax.to('.scroll-down',0.3,{opacity:1})
+												},4000);
+										}	
+									});
+							}
+						},
+						0.05);
+				TweenMax.fromTo('#header-logo', 1 , {rotation: 400}, { rotation: 0});
+			}
+		})
 	}
 
 	initPageAnims()
