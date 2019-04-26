@@ -8,6 +8,7 @@
 .hero-home{
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
   background-image: linear-gradient(53deg, #00457c, #01a4ce);
   box-sizing: border-box;
   position: relative;
@@ -19,7 +20,7 @@
   }
 
   h1{
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     line-height: 1.1;
     span{
       display: block;
@@ -53,7 +54,7 @@
     }
   }
 
-  a, button{
+  .btn-hero-details{
     display: inline-block;
     text-align: center;
     font-family: inherit;
@@ -62,7 +63,7 @@
     line-height: 37px; // 37.2px
     border-radius: 5px; // 5.1px
     background-color: $blue;
-    margin-top: 60px;
+    margin-top: 40px;
     &:hover{
       color: $blue;
       background-color: white;
@@ -84,7 +85,10 @@
 .hero-text{
   width: 555px;
   font-size: 20px;
-  line-height: 1.5
+  line-height: 1.5;
+  p{
+    max-width: 30em;
+  }
 }
 
 .hero-logo{
@@ -96,20 +100,27 @@
   transform: translate(-40%, -2em);
   max-width: 42%;
 }
-@media screen and (max-width:1000px){
-
+@media screen and (max-width:1200px){
+  .hero-home img{
+    margin-left: 15%;
+  }
 }
 
-@media screen and (max-width:780px){
+@media screen and (max-width:850px){
   .hero-text-image{
-    flex-wrap: wrap;
-    padding-top: 140px;
+    display: block;
+    padding-top: 120px;
   }
   .hero-text{
     width: 100%;
   }
-  .hero-home figure{
-    max-width: 70%;
+  .hero-home {
+    figure{
+      max-width: 65%;
+    }
+    img{
+      margin-left: 0;
+    }
   }
   .hero-logo{
     transform: translate(-40%, 0);
