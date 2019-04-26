@@ -131,33 +131,5 @@ j.scaleX=j.scaleY=j.scaleZ=1,za("transform,scale,scaleX,scaleY,scaleZ,x,y,z,rota
 		selector: '.parallax'
 	});
 
-	/* ------------
-		Form Submit
-	------------ */
-	// document.getElementById("contactForm").onsubmit = function() {
-	// 		//Ajax
-	// 		var dataString = {
-	// 			"name" :$("#name").val(),
-	// 			"email": $("#email").val(),
-	// 			"subject": $("#subject").val(),
-	// 			"message":$("#message").val()
-	// 		}
-
-	// 		$.ajax({
-	// 			url: "https://formspree.io/",
-	// 			method: "POST",
-	// 			data: dataString,
-	// 			dataType: "json",
-	// 			success: function(data) {
-	// 				alert('successfully submitted form!');
-	// 				$("#name").val('');
-	// 				$("#email").val('');
-	// 				$("#subject").val('');
-	// 				$("#message").val('');
-	// 			},
-	// 			error: function(){
-	// 				alert('Error!');
-	// 			}
-	// 		});
-	// }
+	
 })(window,document);
