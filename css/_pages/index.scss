@@ -45,6 +45,12 @@
       margin-top: 15px;
       font-size: 13px;
     }
+    img, figcaption{
+      position: relative !important;
+    }
+    svg{
+      top: auto !important;
+    }
   }
 
   a, button{
