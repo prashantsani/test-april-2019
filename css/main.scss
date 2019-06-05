@@ -52,14 +52,12 @@
 
 	// Letter Spacing
 
-	$site_url: '';
 
 /* =============================================================================
 	 2. Fonts / Mixins / Functions / Plugins
 ========================================================================== */
 	@import 'fonts.scss';
 	@import 'mixins.scss';
-	@import 'flex.scss';
 	@import 'preloader.scss';
 
 /* =============================================================================
@@ -278,8 +276,6 @@
 	------------ */
 		@import '_pages/common.scss';
 		@import '_pages/index.scss';
-		@import '_pages/about.scss';
-		@import '_pages/contact.scss';
 
 /* =============================================================================
 	6. Footer
